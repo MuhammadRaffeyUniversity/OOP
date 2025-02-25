@@ -18,7 +18,7 @@ int charCount(char c, char arr[], int i)
 
 int main()
 {
-    char arr[] = "I am an Agentic AI Developer and I use Python to build AI Agents";
+    char arr[70] = "I am an Agentic AI Engineer and I use Python to build AI Agents";
     cout << charCount('a', arr, 0) << endl;
     return 0;
 }
