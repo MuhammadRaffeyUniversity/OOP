@@ -51,6 +51,11 @@ int main()
             break;
         robot.performTask(minutes);
         float bt = robot.getBatteryLevel();
+        if (bt <= 0)
+        {
+            robot.getTaskCount();
+            break;
+        }
 
     } while (true);
 
