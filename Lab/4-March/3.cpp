@@ -18,7 +18,7 @@ public:
         if (batteryLevel > 0 && btCon <= batteryLevel)
         {
             cout << "Performing task for " << min << " minutes." << endl;
-            batteryLevel -= min * 2;
+            batteryLevel -= btCon;
             taskCount++;
         }
         else
