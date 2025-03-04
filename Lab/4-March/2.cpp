@@ -38,7 +38,16 @@ public:
 };
 int main()
 {
-    BankAcc b1(101, 1000, "Raffey");
+    string name;
+    int accNo;
+    float balance;
+    cout << "Enter account number: ";
+    cin >> accNo;
+    cout << "Enter account holder name: ";
+    cin >> name;
+    cout << "Enter initial balance: ";
+    cin >> balance;
+    BankAcc b1(accNo, balance, name);
     b1.checkBal();
     b1.withDraw(500);
     b1.withDraw(600);
