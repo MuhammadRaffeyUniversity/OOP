@@ -17,7 +17,7 @@ public:
     ShoppingCart(ShoppingCart &other)
     {
         cartID = other.cartID;
-        totalprice = other.totalprice; //Shallow Copy
+        totalprice = other.totalprice; // Shallow Copy
         // totalprice = new double(*other.totalprice); // Deep Copy
     }
 

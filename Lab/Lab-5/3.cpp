@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-// Deep Copy
+// Association
 int main()
 {
     return 0;

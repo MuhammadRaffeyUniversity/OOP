@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-// Deep Copy
+// Aggregation
 int main()
 {
     return 0;
