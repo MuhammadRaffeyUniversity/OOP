@@ -20,6 +20,8 @@ public:
 
 int main()
 {
+    Account a;
+    a.showDetails();
     SavingsAccount sa;
     sa.showDetails();
     return 0;
