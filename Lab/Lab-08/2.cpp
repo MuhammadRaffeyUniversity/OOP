@@ -21,8 +21,9 @@ public:
 int main()
 {
     Account a;
-    a.showDetails();
     SavingsAccount sa;
+
+    a.showDetails();
     sa.showDetails();
     return 0;
 }
