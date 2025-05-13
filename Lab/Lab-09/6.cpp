@@ -4,6 +4,7 @@ using namespace std;
 
 class NegativeMarks
 {
+private:
     string errormsg;
 
 public:
