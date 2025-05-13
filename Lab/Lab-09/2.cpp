@@ -1,22 +1,26 @@
 #include <iostream>
+#include <array>
 using namespace std;
+// out_of_range
 
 int main()
 {
     try
     {
-        int age;
-        cout << "Enter your age: ";
-        cin >> age;
-        if (age < 18)
+        int arr[5] = {1, 2, 3, 4, 5};
+        int i;
+        cout << "Enter an index  ";
+        cin >> i;
+
+        if (i < 0 || i >= 5)
         {
-            throw string("Age is less than 18, can not vote");
+            throw out_of_range("Index out of range");
         }
-        cout << "You are eligible to vote." << endl;
+        cout << "arr[" << i << "] = " << arr[i] << endl;
     }
-    catch (string a)
+    catch (out_of_range e)
     {
-        cout << a << endl;
+        cout << "Exception: " << e.what() << endl;
     }
 
     return 0;
