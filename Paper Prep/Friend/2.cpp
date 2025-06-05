@@ -16,7 +16,7 @@ public:
 class Second
 {
 public:
-    void change(First &firstClassObj, int x)
+    void change(First firstClassObj, int x)
     {
         firstClassObj.a = x;
         firstClassObj.print();
